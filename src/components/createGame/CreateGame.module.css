@@ -1,0 +1,47 @@
+.form_wrapper {
+  max-width: 600px;
+  margin: 0 10rem;
+}
+
+.form {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "input image"
+    "select image"
+    "button image";
+  grid-template-columns: 20rem 50rem;
+  grid-template-rows: 10rem 10rem 10rem;
+}
+
+.map_image {
+  margin: 0 5rem;
+  padding: 2rem;
+  grid-area: image;
+}
+
+.map_image > img {
+  max-width: 600px;
+}
+
+.map_image > img[src="/assets/map_entrance.png"] {
+  height: 25rem;
+  transform: rotate3d(1, -1, 1, -360deg);
+  transition: transform linear 1500ms;
+}
+
+.map_image > img[src="/assets/map_empty.png"] {
+  height: 25rem;
+  transform: rotate3d(1, 1, 1, 0deg);
+  transition: transform linear 500ms;
+}
+
+.map_image > img[src="/assets/map_river.jpg"] {
+  transform: rotate3d(-2, 1, 1, 45deg);
+  transition: transform linear 500ms;
+}
+
+.map_image > img[src="/assets/map_turtle.jpg"] {
+  transform: rotate3d(1, 1, 1, 0deg);
+  transition: transform linear 500ms;
+}

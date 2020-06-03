@@ -1,0 +1,15 @@
+.button > input {
+  width: 100%;
+  font-size: 1.4rem !important;
+}
+
+input {
+  color: black;
+  transition: color linear 600ms;
+}
+
+.animation {
+  color: white;
+  transition: color linear 300ms, background-color linear 300ms;
+  background-color: #4b3f6b;
+}

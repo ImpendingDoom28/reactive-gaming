@@ -1,0 +1,48 @@
+.card {
+  border: 1px solid green;
+  display: grid;
+  grid-template-areas:
+    "left-top          0 0 right-top"
+    "left-under-top    0 0 right-under-top"
+    "left-center 0 0 right-center"
+    "left-bottom-above 0 0 right-bottom-above"
+    "left-bottom 0 0 right-bottom";
+  grid-template-columns: 2.1em 0.6em 0.6em 2.1em;
+  grid-template-rows: 1.25em 1.25em 2.5em 1.25em 1.25em;
+}
+
+.card_upside_down {
+  background-image: url("../../../../assets/card_background.jpg");
+}
+
+.card_left_top {
+  grid-area: left-top;
+}
+
+.card_left_under_top {
+  grid-area: left-under-top;
+}
+
+.card_left_bottom_above {
+  grid-area: left-bottom-above;
+}
+
+.card_left_bottom {
+  grid-area: left-bottom;
+}
+
+.card_right_top {
+  grid-area: right-top;
+}
+
+.card_right_under_top {
+  grid-area: right-under-top;
+}
+
+.card_right_bottom_above {
+  grid-area: right-bottom-above;
+}
+
+.card_right_bottom {
+  grid-area: right-bottom;
+}
